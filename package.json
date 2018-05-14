@@ -1,0 +1,33 @@
+{
+  "name": "bgreduce",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "jshint": "jshint *.json src/*.js test/*.js",
+    "test": "npm run jshint && npm run unit",
+    "unit": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alxndrsn/node-bgreduce.git"
+  },
+  "keywords": [
+    "bgreduce",
+    "backgroundify",
+    "reduce",
+    "array",
+    "prototype"
+  ],
+  "author": "alxndrsn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxndrsn/node-bgreduce/issues"
+  },
+  "homepage": "https://github.com/alxndrsn/node-bgreduce#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jshint": "^2.9.5",
+    "mocha": "^5.1.1"
+  }
+}
