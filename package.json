@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "jshint": "jshint *.json src/*.js test/*.js",
+    "release": "git push && git tag v$(jq -r .version package.json) && git push --tags && npm publish",
     "test": "npm run jshint && npm run unit",
     "unit": "mocha test/*.spec.js"
   },
